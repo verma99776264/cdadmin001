@@ -687,3 +687,26 @@ body {
         border-radius: 10px;
     }
 }
+
+
+/* Logout Button */
+
+.logoutContainer {
+    transition: 0.3s ease;
+    position: fixed;
+    padding: 10px 30px;
+    top: 60px;
+    right: 10px;
+    border: 1px solid #F3F5F7;
+    background-color: white;
+    cursor: pointer;
+    z-index: 999;
+    color: #999;
+    border-radius: 10px;
+    display: none;
+}
+
+.logoutContainer:hover {
+    background-color: #5c2a2a;
+    color: #f1f1f1;
+}
