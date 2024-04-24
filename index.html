@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
-<body>
 <div class="container">
     <nav class="sidebar">            
         <div>
@@ -26,7 +24,7 @@
                     <span><i class="fa-solid fa-eraser"></i>&nbsp;Clear Only</span>
                 </li>
                 <li class="side-nav__item">                  
-                    <span><i class="fa-solid fa-upload"></i>&nbsp;Clear &amp; Add to DB</span>
+                    <span><i class="fa-solid fa-upload"></i>&nbsp;Clear &amp; Add record</span>
                 </li>
                 <li class="side-nav__item">                  
                     <span><i class="fas fa-edit"></i>&nbsp;Edit</span>
@@ -76,51 +74,93 @@
             </div>
         </div>
         <div class="bottom-container">
-                <div class="container1">
-                    <div class="card">
-                        <div class="img">
-                            <img src="./assets/img.png" alt="l">
-                        </div>
-                        <div class="content">
-                            <h3>Image</h3>
-                            <p>Upload imge from system</p>
-                        </div>
-                        <div class="btnContainer">
-                            <span class="btn"><i class="fa-solid fa-upload"></i>&nbsp;Upload</span>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="img">
-                            <img src="./assets/camera.jpg" alt="l">
+            <div class="containermin">
+                <div class="dragBtn">
+                    <label for="file">
+                        <span id="dragMsg">Drag an image to upload...</span>
+                        <input type="file" name="file" id="file" onchange="mine()">
+                        <br>
+                        <span id="fileName"></span>
+                    </label>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/blurimg.png" alt="l">
+                    </div>
+                    <div>
+                        <span>Click to upload blurred image....</span>
+                        <button class="uploadImgBtn">Upload Selected File</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="./assets/img.png" alt="l">
+                    </div>
+                    <div>
+                        <span>Non blurred image to match....</span>
+                        <button class="uploadImgBtn">Choose File</button>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+            <div class="containermin" style="display: flex;">
+                <div class="from-camera box">
+                    <div class="img2">
+                        <img src="./assets/camera.jpg" alt="l">
+                    </div>
+                    <div class="contentBox">
+                        <span>Click to capture....</span>
+                        <button class="uploadImgBtn">Capture From Cam</button>
+                    </div>
+                </div>
+                <div class="stats box">
+                    <div class="heading">
+                        <h2>Statistics</h2>
+                        <span class="float-right">&lt;&nbsp;1/1&nbsp;&gt;</span>
+                    </div>
+                    <div class="mini-containermin">
+                        <div class="lastOp">
+                            <span>Last Operation Time: </span>
+                            <span class="progress"></span>
+                            <span>23ms</span>
                         </div>
-                        <div class="content">
-                            <h3>Camera</h3>
-                            <p>Lorem ipsum dolor, sit</p>
+                        <div class="totalInDb">
+                        <div class="fistInDb">
+                            <div class="textcontainermin">Total records:</div>
+                            <div class="outerCircle">
+                                <div class="innerCircle">
+                                    230
+                                </div>
+                            </div>
                         </div>
-                        <div class="btnContainer">
-                            <span class="btn"><i class="fa-solid fa-camera"></i>&nbsp;Take Picture</span>
+                        <div class="secondInDb">
+                            <div class="textcontainermin">Operations:</div>
+                            <div class="outerCircle">
+                                <div class="innerCircle">
+                                    30
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thirdInDb">
+                            <div class="textcontainermin">Time (In Mins):</div>
+                            <div class="outerCircle">
+                                <div class="innerCircle">
+                                    20
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
-            
-                    <div class="card">
-                        <div class="img">
-                            <img src="./assets/blurimg.png" alt="l">
-                        </div>
-                        <div class="content">
-                            <h3>Unblur Face</h3>
-                            <p>Lorem ipsum dolor, sit</p>
-                        </div>
-                        <div class="btnContainer">
-                            <span class="btn"><i class="fa-solid fa-upload"></i>&nbsp;Upload</span>
-                        </div>
-                    </div>
-
-                </div>               
+                </div>
+            </div>          
         </div>
     </main>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+<script src="./scripts/main.js"></script>
 </body>
 </body>
 </html>
