@@ -27,7 +27,7 @@
                     <span><i class="fa-solid fa-upload"></i>&nbsp;Clear &amp; Add record</span>
                 </li>
                 <li class="side-nav__item">                  
-                    <span><i class="fas fa-edit"></i>&nbsp;Edit</span>
+                    <span><i class="fas fa-edit"></i>&nbsp;Edit Record</span>
                 </li>
                 <li class="side-nav__item">           
                     <span><i class="fa-solid fa-table"></i>&nbsp;Add Record</span>
@@ -78,7 +78,9 @@
             <div class="containermin">
                 <div class="dragBtn">
                     <label for="file">
-                        <span id="dragMsg">Drag an image to upload...</span>
+                        <i class="fa-solid fa-upload"></i>
+                        <br>
+                        <span id="dragMsg">Drag an image...</span>
                         <input type="file" name="file" id="file" onchange="mine()">
                         <br>
                         <span id="fileName"></span>
@@ -86,20 +88,25 @@
                 </div>
                 <div class="box">
                     <div class="img">
-                        <img src="./assets/blurimg.png" alt="l">
+                        <img src="./assets/img.png" alt="l">
                     </div>
                     <div>
                         <span>Click to upload blurred image....</span>
-                        <button class="uploadImgBtn">Upload Selected File</button>
+                        <button class="uploadImgBtn"><i class="fa-solid fa-upload"></i>&nbsp;Upload Selected File</button>
                     </div>
                 </div>
                 <div class="box">
                     <div class="img">
-                        <img src="./assets/img.png" alt="l">
+                        <label for="uploadnonblr">
+                            <i class="fa-solid fa-image"></i>
+                            <br>
+                            Upload Clear image
+                            <input type="file" name="uploadnonblr">
+                        </label>
                     </div>
                     <div>
                         <span>Non blurred image to match....</span>
-                        <button class="uploadImgBtn">Choose File</button>
+                        <button class="uploadImgBtn"><i class="fa-solid fa-image"></i>&nbsp;Find in database</button>
                     </div>
                 </div>
             </div>
@@ -113,7 +120,7 @@
                     </div>
                     <div class="contentBox">
                         <span>Click to capture....</span>
-                        <button class="uploadImgBtn">Capture From Cam</button>
+                        <button class="uploadImgBtn"><i class="fa-solid fa-camera"></i>&nbsp;Capture From Cam</button>
                     </div>
                 </div>
                 <div class="stats box">
